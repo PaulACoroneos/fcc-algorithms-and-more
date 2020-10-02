@@ -1,7 +1,7 @@
 function pairwise(arr, arg) {
-  //base case. array too small
+  //base case 1. array too small
   if(arr.length <= 1) return 0;
-  //base case. Exactly 2 entries
+  //base case 2. Exactly 2 entries
   if( arr.length === 2) return arr[0] + arr[1] === arg ? 1 : 0;
 
   //otherwise lets loop for each element and check if another element sums to args
