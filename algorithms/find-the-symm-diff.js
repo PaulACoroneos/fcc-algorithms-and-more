@@ -5,8 +5,8 @@ const diff = (arr1,arr2) => {
 }
 
 function sym(...args) {
-  //base case. no array passed
-  if(args.length === 0) return args;
+  //base case. array of 1 or less returned? return args
+  if(args.length <= 1) return args;
   //otherwise loop through all arrays and reduce unique values to single array
   while(args.length > 1) {
     const arrDiff = diff(args[0],args[1]);
